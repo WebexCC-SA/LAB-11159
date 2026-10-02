@@ -6,11 +6,11 @@
 # Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
 
 
-Alejandra Gonzalez Romero – Solutions Engineer
+Alejandra Gonzalez Romero – Solutions Engineer, Collaboration
 
-Bryan Waldmann – Leader, Solutions Engineer
+Bryan Waldmann – Leader, Solutions Engineer - Collaboration
 
-Rajamani Nallakaruppan – Solutions Engineer
+Rajamani Nallakaruppan – Solutions Engineer, Collaboration
 
 ## About this lab
 

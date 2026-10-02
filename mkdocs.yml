@@ -87,6 +87,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Welcome: welcome.md
+  - Prepare for the lab:
+      - Lab topology: lab-topology.md
+      - Getting started: getting-started.md
   - Lab:
       - Overview: overview.md
       - Lab 1 - Getting Started: lab1_getting_started.md
