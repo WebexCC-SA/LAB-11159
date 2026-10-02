@@ -3,9 +3,7 @@
 <iframe src="https://app.sli.do/event/9FSNERWiqKg55MygtExCBX/questions" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
 -->
 
-# Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
-
-**LAB 11159 · WebexOne 2026**
+# ** LAB 11159 Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise WebexOne 2026 **
 
 
 Alejandra Gonzalez Romero – Solutions Engineer
@@ -21,6 +19,8 @@ In this lab, you will learn how to setup the Webex Calling AI features. We start
 You will build a real-world industry use case end-to-end using AI Assistant for Calling (Call Summaries and Share-on-Transfer), Ask Me Anything, and the AI Receptionist. You will design, configure, and validate your solution with live test calls, seeing real-time summaries, intelligent call routing, and context-aware handoffs in action.
 
 By the end of the lab, you will walk away with a working prototype, a deployment blueprint, and the skills to transform voice into your organization's smartest productivity asset.
+
+![Screenshot: Topology](assets/images/image2.png)
 
 ## Lab modules
 
