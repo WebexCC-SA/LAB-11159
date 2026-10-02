@@ -90,6 +90,10 @@ nav:
   - Prepare for the lab:
       - Lab topology: lab-topology.md
       - Getting started: getting-started.md
+  - Configure Webex Calling:
+      - Location and basic calling setup: calling-setup.md
+      - Licensing users: licensing-users.md
+      - Enabling AI features: ai-features.md
   - Lab:
       - Overview: overview.md
       - Lab 1 - Getting Started: lab1_getting_started.md
