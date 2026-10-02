@@ -8,7 +8,7 @@ We are going to create an AI Receptionist to front face the calls from our calle
 
     ![Screenshot: Navigate to “Calling” in the left pane and then click “AI Receptionist” on the list.](./assets/image47.png)
 
-## Create the knowledge base
+## Create the Knowledge Base
 
 !!! note "Knowledge base PDF needed"
 
