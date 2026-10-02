@@ -68,7 +68,7 @@ AI Receptionist Voice: Any of your choice
 
 Direct line caller ID Name: Choose the Display name
 
-![Screenshot: Direct line caller ID Name: {{Choose the Display name}}](./assets/image56.png)
+![Screenshot: Direct line caller ID Name: Choose the Display name](./assets/image56.png)
 
 ## Receptionist guidelines
 
