@@ -94,11 +94,13 @@ nav:
       - Location and basic calling setup: calling-setup.md
       - Licensing users: licensing-users.md
       - Enabling AI features: ai-features.md
-  - Lab:
-      - Overview: overview.md
-      - Lab 1 - Getting Started: lab1_getting_started.md
-      - Conclusion: conclusion.md
-  - Topologies: topologies.md
+  - AI Receptionist: ai-receptionist.md
+  - Verify the solution: verification.md
+#  - Lab:
+#      - Overview: overview.md
+#      - Lab 1 - Getting Started: lab1_getting_started.md
+#      - Conclusion: conclusion.md
+#  - Topologies: topologies.md
 #  - How to use this guide:
 #      - Setting up and using the tool:
 #        - Initial Setup: howToUse/initialSetup.md
