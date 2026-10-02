@@ -1,3 +1,3 @@
 # Lab topology
 
-![Screenshot: Lab topology](assets/images/image2.png)
+![Screenshot: Lab topology](./assets/image2.png)

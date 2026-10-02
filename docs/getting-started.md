@@ -8,11 +8,11 @@
 
 4. You will be automatically assigned to a lab pod, and you will be taken to the Lab topology page as shown below.
 
-    ![Screenshot: You will be automatically assigned to a lab pod, and you will be taken to the Lab topology page as shown below.](./assets/images/image3.png)
+    ![Screenshot: You will be automatically assigned to a lab pod, and you will be taken to the Lab topology page as shown below.](./assets/image3.png)
 
 5. Click on the **User Workstation 1** icon on the topology page and it will bring up a fly-out window on left with **Workstation 1** related information like **IP Address**, **username**, and **password** as shown below.
 
-    ![Screenshot: Click on the User Workstation 1 icon on the topology page and it will bring up a fly-out window on left with Workstation 1 related information like IP Address, usern...](./assets/images/image4.png)
+    ![Screenshot: Click on the User Workstation 1 icon on the topology page and it will bring up a fly-out window on left with Workstation 1 related information like IP Address, usern...](./assets/image4.png)
 
 6. Similarly, you can click on any other Virtual Machine on the topology page to get its respective details.
 
@@ -24,7 +24,7 @@
 
 To access Workstation(s) over **WebRDP**, click on the **Workstation 1** icon on the topology page and when it brings up a fly-out window with workstation details.  On the fly-out window go to click on the **Remote Access \> Web RDP**.  It will open a new browser tab and connect you to Workstation 1.
 
-![Screenshot: To access Workstation(s) over WebRDP, click on the Workstation 1 icon on the topology page and when it brings up a fly-out window with workstation details.  On the f...](./assets/images/image5.png)
+![Screenshot: To access Workstation(s) over WebRDP, click on the Workstation 1 icon on the topology page and when it brings up a fly-out window with workstation details.  On the f...](./assets/image5.png)
 
 ## Record your session details
 
@@ -40,7 +40,7 @@ Similarly, you can access Workstation 2 and Workstation 3.
 
 **Domain Name**: Go to the details tab of your session and scroll down to see the DNS name. It will be in the cb**XXX**.dc-**YY**.com format.
 
-![Screenshot: Domain Name: Go to the details tab of your session and scroll down to see the DNS name. It will be in the cbXXX.dc-YY.com format.](./assets/images/image6.png)
+![Screenshot: Domain Name: Go to the details tab of your session and scroll down to see the DNS name. It will be in the cbXXX.dc-YY.com format.](./assets/image6.png)
 
 **Now you can proceed with the lab modules.**
 
