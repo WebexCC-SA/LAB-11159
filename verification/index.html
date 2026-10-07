@@ -1,0 +1,1008 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise">
+      
+      
+        <meta name="author" content="RAJAMANI Nallakaruppan">
+      
+      
+      
+        <link rel="prev" href="../ai-receptionist/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Verify the solution - LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#verification-of-webex-ai-calling-features" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" class="md-header__button md-logo" aria-label="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Verify the solution
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../welcome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../calling-setup/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Configure Webex Calling
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ai-receptionist/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI Receptionist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Verify the solution
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" class="md-nav__button md-logo" aria-label="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Configure Webex Calling
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calling-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Location and basic calling setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verify the solution
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verify the solution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#sign-in-to-the-paralegal-webex-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sign in to the Paralegal Webex app
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-the-second-workstation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access the second workstation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-ai-receptionist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test the AI Receptionist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-ai-assistant-and-live-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test the AI Assistant and live transcript
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transfer-the-call-with-its-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transfer the call with its summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-post-call-summaries-and-recordings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review post call summaries and recordings
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="verification-of-webex-ai-calling-features">Verification of Webex AI Calling features</h1>
+<p>Lets login to the Webex app(s) with the two end user accounts 1. Paralegal and 2. Attorney.</p>
+<h2 id="sign-in-to-the-paralegal-webex-app">Sign in to the Paralegal Webex app</h2>
+<ol>
+<li>
+<p>Open the Webex app in the Laptop that you are using.</p>
+</li>
+<li>
+<p>Enter the email address of the Paralegal user – make sure to use the Paralegal email address of your pod. If you are not sure of the email address, navigate to Users page in the Control Hub and get the email address. Click “Next”</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image66.png" data-title="Screenshot: Enter the email address of the Paralegal user – make sure to use the Paralegal email address of your pod. If you are not sure of the email address, navigate to Users..." data-desc-position="top"><img alt="Screenshot: Enter the email address of the Paralegal user – make sure to use the Paralegal email address of your pod. If you are not sure of the email address, navigate to Users..." src="../assets/image66.png"></a></p>
+</li>
+<li>
+<p>Enter the User password as “WebexOne2026!” and click “Sign In”</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image67.png" data-title="Screenshot: Enter the User password as “WebexOne2026!” and click “Sign In”" data-desc-position="top"><img alt="Screenshot: Enter the User password as “WebexOne2026!” and click “Sign In”" src="../assets/image67.png"></a></p>
+</li>
+<li>
+<p>Click “OK” in the Emergency Calling Notification screen. Please do not dial 911 during the lab</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image68.png" data-title="Screenshot: Click “OK” in the Emergency Calling Notification screen. Please do not dial 911 during the lab" data-desc-position="top"><img alt="Screenshot: Click “OK” in the Emergency Calling Notification screen. Please do not dial 911 during the lab" src="../assets/image68.png"></a></p>
+</li>
+<li>
+<p>Click “Calling” tab in the left pane of the Webex and you should a screen similar as this</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image69.png" data-title="Screenshot: Click “Calling” tab in the left pane of the Webex and you should a screen similar as this" data-desc-position="top"><img alt="Screenshot: Click “Calling” tab in the left pane of the Webex and you should a screen similar as this" src="../assets/image69.png"></a></p>
+</li>
+</ol>
+<h2 id="access-the-second-workstation">Access the second workstation</h2>
+<ol>
+<li>
+<p>Now, click the following link and obtain a dCloud pod.</p>
+</li>
+<li>
+<p>click this <a href="https://www.ciscodcloud.com/apps/expo/db3dxike9xqe4tz8gxyslj8u0">link</a> to open the dCloud eXpo page and you should see this below page</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image70.png" data-title="Screenshot: click this link to open the dCloud eXpo page and you should see this below page" data-desc-position="top"><img alt="Screenshot: click this link to open the dCloud eXpo page and you should see this below page" src="../assets/image70.png"></a></p>
+</li>
+<li>
+<p>Click ‘Explore’.</p>
+</li>
+<li>
+<p>You will then be asked to enter your email address, please enter your email address. Check the box to agree to terms &amp; conditions and then click “Launch”.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image71.png" data-title="Screenshot: You will then be asked to enter your email address, please enter your email address. Check the box to agree to terms &amp; conditions and then click “Launch”." data-desc-position="top"><img alt="Screenshot: You will then be asked to enter your email address, please enter your email address. Check the box to agree to terms &amp; conditions and then click “Launch”." src="../assets/image71.png"></a></p>
+</li>
+<li>
+<p>We will be using Workstation1 (wkst1) for our lab. The machine can be accessed by clicking the “Open” option next to it.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image72.png" data-title="Screenshot: We will be using Workstation1 (wkst1) for our lab. The machine can be accessed by clicking the “Open” option next to it." data-desc-position="top"><img alt="Screenshot: We will be using Workstation1 (wkst1) for our lab. The machine can be accessed by clicking the “Open” option next to it." src="../assets/image72.png"></a></p>
+</li>
+<li>
+<p>Repeat steps 2-4 for the “Attorney” user and login. You should see a screen similar as follows for the Attorney user</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image73.png" data-title="Screenshot: Repeat steps 2-4 for the “Attorney” user and login. You should see a screen similar as follows for the Attorney user" data-desc-position="top"><img alt="Screenshot: Repeat steps 2-4 for the “Attorney” user and login. You should see a screen similar as follows for the Attorney user" src="../assets/image73.png"></a></p>
+</li>
+</ol>
+<p>Now we have both the users logged in to their Webex app in two machines.</p>
+<h2 id="test-the-ai-receptionist">Test the AI Receptionist</h2>
+<ol>
+<li>
+<p>Navigate back to Control Hub and click “PSTN &amp; Routing” under Service in the left pane. You should see the Numbers tab</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image74.png" data-title="Screenshot: Navigate back to Control Hub and click “PSTN &amp; Routing” under Service in the left pane. You should see the Numbers tab" data-desc-position="top"><img alt="Screenshot: Navigate back to Control Hub and click “PSTN &amp; Routing” under Service in the left pane. You should see the Numbers tab" src="../assets/image74.png"></a></p>
+</li>
+<li>
+<p>Make a note of the “AI Receptionist” number</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image75.png" data-title="Screenshot: Make a note of the “AI Receptionist” number" data-desc-position="top"><img alt="Screenshot: Make a note of the “AI Receptionist” number" src="../assets/image75.png"></a></p>
+</li>
+<li>
+<p>Now from your Cellphone / mobile, dial this 10-digit number. Please note, use the number from your Control Hub and not the number from the above screenshot.</p>
+</li>
+<li>
+<p>The AI Receptionist answers the call and it will read the “AI Transparency” message followed by the “Welcome Message”.</p>
+</li>
+<li>
+<p>Remember, we have setup a Knowledge base for our AI Receptionist with some Law Firm FAQs. Lets go ahead and test this functionality.</p>
+</li>
+<li>
+<p>Ask the AI Receptionist questions such as A). what is working hours of the firm? B). what is the address of the firm. C). what services are offered by the firm? You can always refer to the Knowledge base document and make sure the AI receptionist is giving you the correct answers.</p>
+</li>
+<li>
+<p>Once you have tested that, lets now ask the AI receptionist to transfer the call to the Paralegal team. It will confirm your transfer request and the call is now seen on the Paralegal’s Webex app as shown below</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image76.png" data-title="Screenshot: Once you have tested that, lets now ask the AI receptionist to transfer the call to the Paralegal team. It will confirm your transfer request and the call is now see..." data-desc-position="top"><img alt="Screenshot: Once you have tested that, lets now ask the AI receptionist to transfer the call to the Paralegal team. It will confirm your transfer request and the call is now see..." src="../assets/image76.png"></a></p>
+</li>
+<li>
+<p>Lets go ahead and answer this call, you can see the Caller ID shown and also the call being forwarded from the AI Receptionist.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image77.png" data-title="Screenshot: Lets go ahead and answer this call, you can see the Caller ID shown and also the call being forwarded from the AI Receptionist." data-desc-position="top"><img alt="Screenshot: Lets go ahead and answer this call, you can see the Caller ID shown and also the call being forwarded from the AI Receptionist." src="../assets/image77.png"></a></p>
+</li>
+</ol>
+<h2 id="test-the-ai-assistant-and-live-transcript">Test the AI Assistant and live transcript</h2>
+<ol>
+<li>
+<p>The important piece for us is the AI Assistant option, lets go ahead and click on that option</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image78.png" data-title="Screenshot: The important piece for us is the AI Assistant option, lets go ahead and click on that option" data-desc-position="top"><img alt="Screenshot: The important piece for us is the AI Assistant option, lets go ahead and click on that option" src="../assets/image78.png"></a></p>
+</li>
+<li>
+<p>You will now see the Cisco AI Assistant for this Call open up on the right side. This window indicated that the Call is being summarized and the transcript is on.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image79.png" data-title="Screenshot: You will now see the Cisco AI Assistant for this Call open up on the right side. This window indicated that the Call is being summarized and the transcript is on." data-desc-position="top"><img alt="Screenshot: You will now see the Cisco AI Assistant for this Call open up on the right side. This window indicated that the Call is being summarized and the transcript is on." src="../assets/image79.png"></a></p>
+</li>
+<li>
+<p>You can click on Catch me up and check the summary</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image80.png" data-title="Screenshot: You can click on Catch me up and check the summary" data-desc-position="top"><img alt="Screenshot: You can click on Catch me up and check the summary" src="../assets/image80.png"></a></p>
+</li>
+<li>
+<p>You can then click the “Prompts” and click “Find” and choose the option “Give me more info about [topic]” – replace the word [topic] with what is relevant to your call. For example, here it is about the case.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image81.png" data-title="Screenshot: You can then click the “Prompts” and click “Find” and choose the option “Give me more info about topic” – replace the word topic with what is relevant to your call. ..." data-desc-position="top"><img alt="Screenshot: You can then click the “Prompts” and click “Find” and choose the option “Give me more info about topic” – replace the word topic with what is relevant to your call. ..." src="../assets/image81.png"></a></p>
+</li>
+<li>
+<p>You will then the Cisco AI Assistant gives you more info about the call and the “Source” for the info</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image82.png" data-title="Screenshot: You will then the Cisco AI Assistant gives you more info about the call and the “Source” for the info" data-desc-position="top"><img alt="Screenshot: You will then the Cisco AI Assistant gives you more info about the call and the “Source” for the info" src="../assets/image82.png"></a></p>
+</li>
+<li>
+<p>There is indication in the top-right to denote the Call Recording and the Call Summarization is in-progress</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image83.png" data-title="Screenshot: There is indication in the top-right to denote the Call Recording and the Call Summarization is in-progress" data-desc-position="top"><img alt="Screenshot: There is indication in the top-right to denote the Call Recording and the Call Summarization is in-progress" src="../assets/image83.png"></a></p>
+</li>
+<li>
+<p>You can also click the “Transcript” icon on the bottom right-corner to look at the live call transcript.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image84.png" data-title="Screenshot: You can also click the “Transcript” icon on the bottom right-corner to look at the live call transcript." data-desc-position="top"><img alt="Screenshot: You can also click the “Transcript” icon on the bottom right-corner to look at the live call transcript." src="../assets/image84.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image85.png" data-title="Screenshot: You can also click the “Transcript” icon on the bottom right-corner to look at the live call transcript." data-desc-position="top"><img alt="Screenshot: You can also click the “Transcript” icon on the bottom right-corner to look at the live call transcript." src="../assets/image85.png"></a></p>
+</li>
+</ol>
+<h2 id="transfer-the-call-with-its-summary">Transfer the call with its summary</h2>
+<ol>
+<li>
+<p>Now lets try transferring the call to the Attorney and share the Call summary with the Attorney. Click the 3 dots (…) and then click “Transfer”</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image86.png" data-title="Screenshot: Now lets try transferring the call to the Attorney and share the Call summary with the Attorney. Click the 3 dots (…) and then click “Transfer”" data-desc-position="top"><img alt="Screenshot: Now lets try transferring the call to the Attorney and share the Call summary with the Attorney. Click the 3 dots (…) and then click “Transfer”" src="../assets/image86.png"></a></p>
+</li>
+<li>
+<p>Now you will see the following screen, notice the “Include the call summary” option enabled in the bottom – this will ensure we are transferring the call with the summary to the other party.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image87.png" data-title="Screenshot: Now you will see the following screen, notice the “Include the call summary” option enabled in the bottom – this will ensure we are transferring the call with the su..." data-desc-position="top"><img alt="Screenshot: Now you will see the following screen, notice the “Include the call summary” option enabled in the bottom – this will ensure we are transferring the call with the su..." src="../assets/image87.png"></a></p>
+</li>
+<li>
+<p>Now lets click the “Preview” option here and we can see the Call Summary that is about to be shared during the Transfer. If needed and there is a requirement to edit the summary, click the pencil icon and edit/modify the summary.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image88.png" data-title="Screenshot: Now lets click the “Preview” option here and we can see the Call Summary that is about to be shared during the Transfer. If needed and there is a requirement to edit..." data-desc-position="top"><img alt="Screenshot: Now lets click the “Preview” option here and we can see the Call Summary that is about to be shared during the Transfer. If needed and there is a requirement to edit..." src="../assets/image88.png"></a></p>
+</li>
+<li>
+<p>Once you made the changes, click “Back to Selection”</p>
+</li>
+<li>
+<p>Now enter the Attorney extension 1001 and hit “Transfer now” button</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image89.png" data-title="Screenshot: Now enter the Attorney extension 1001 and hit “Transfer now” button" data-desc-position="top"><img alt="Screenshot: Now enter the Attorney extension 1001 and hit “Transfer now” button" src="../assets/image89.png"></a></p>
+</li>
+<li>
+<p>In the Attorney Webex app, you should now see the Call ringing. You can answer the call by clicking the “Green” button but before that, notice the “Caller Intent” – this is a Webex Calling AI feature to give the caller information about the caller intent even before answering the call</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image90.png" data-title="Screenshot: In the Attorney Webex app, you should now see the Call ringing. You can answer the call by clicking the “Green” button but before that, notice the “Caller Intent” – ..." data-desc-position="top"><img alt="Screenshot: In the Attorney Webex app, you should now see the Call ringing. You can answer the call by clicking the “Green” button but before that, notice the “Caller Intent” – ..." src="../assets/image90.png"></a></p>
+</li>
+<li>
+<p>After answering the call, the Attorney can now see the Caller Intent and the Transfer Call Summary show up</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image91.png" data-title="Screenshot: After answering the call, the Attorney can now see the Caller Intent and the Transfer Call Summary show up" data-desc-position="top"><img alt="Screenshot: After answering the call, the Attorney can now see the Caller Intent and the Transfer Call Summary show up" src="../assets/image91.png"></a></p>
+</li>
+<li>
+<p>Once you have reviewed the info, you can now disconnect the call.</p>
+</li>
+</ol>
+<h2 id="review-post-call-summaries-and-recordings">Review post call summaries and recordings</h2>
+<ol>
+<li>
+<p>Now return back to the Paralegal Webex Workstation and you might see this notification in the bottom right-corner. This is indicating us that the Call Summary for the call is ready now. Click the “Close”button for now.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image92.png" data-title="Screenshot: Now return back to the Paralegal Webex Workstation and you might see this notification in the bottom right-corner. This is indicating us that the Call Summary for th..." data-desc-position="top"><img alt="Screenshot: Now return back to the Paralegal Webex Workstation and you might see this notification in the bottom right-corner. This is indicating us that the Call Summary for th..." src="../assets/image92.png"></a></p>
+</li>
+<li>
+<p>Click the “Calling” tab in the left pane of the Webex app and then click “All”. You should see all the call list here.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image93.png" data-title="Screenshot: Click the “Calling” tab in the left pane of the Webex app and then click “All”. You should see all the call list here." data-desc-position="top"><img alt="Screenshot: Click the “Calling” tab in the left pane of the Webex app and then click “All”. You should see all the call list here." src="../assets/image93.png"></a></p>
+</li>
+<li>
+<p>Click the “AI Summary” icon in the Call list to view the AI Summary.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image94.png" data-title="Screenshot: Click the “AI Summary” icon in the Call list to view the AI Summary." data-desc-position="top"><img alt="Screenshot: Click the “AI Summary” icon in the Call list to view the AI Summary." src="../assets/image94.png"></a></p>
+</li>
+<li>
+<p>You can now see the “Short Summary” of the call</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image95.png" data-title="Screenshot: You can now see the “Short Summary” of the call" data-desc-position="top"><img alt="Screenshot: You can now see the “Short Summary” of the call" src="../assets/image95.png"></a></p>
+</li>
+<li>
+<p>Click “Call Summary” to view the full Call Summary and the Action items from this call</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image96.png" data-title="Screenshot: Click “Call Summary” to view the full Call Summary and the Action items from this call" data-desc-position="top"><img alt="Screenshot: Click “Call Summary” to view the full Call Summary and the Action items from this call" src="../assets/image96.png"></a></p>
+</li>
+<li>
+<p>Close the Call Summary window after reviewing the info.</p>
+</li>
+<li>
+<p>To access the Call recordings, click the Recording tab in the top. You will be able to see the list of Call Recordings, click on a particular call and click the Play button to listen to the Call Recording.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image97.png" data-title="Screenshot: To access the Call recordings, click the Recording tab in the top. You will be able to see the list of Call Recordings, click on a particular call and click the Play..." data-desc-position="top"><img alt="Screenshot: To access the Call recordings, click the Recording tab in the top. You will be able to see the list of Call Recordings, click on a particular call and click the Play..." src="../assets/image97.png"></a></p>
+</li>
+</ol>
+<p>This completes the lab!</p>
+<p>Thank you!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../ai-receptionist/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AI Receptionist">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                AI Receptionist
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

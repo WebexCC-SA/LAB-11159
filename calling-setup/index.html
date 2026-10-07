@@ -1,0 +1,922 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise">
+      
+      
+        <meta name="author" content="RAJAMANI Nallakaruppan">
+      
+      
+      
+        <link rel="prev" href="../welcome/">
+      
+      
+        <link rel="next" href="../licensing-users/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Location and basic calling setup - LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#location-and-basic-calling-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" class="md-header__button md-logo" aria-label="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Location and basic calling setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../welcome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Configure Webex Calling
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ai-receptionist/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI Receptionist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../verification/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Verify the solution
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" class="md-nav__button md-logo" aria-label="LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-11159 - Beyond the Ring: Unleashing Webex Calling AI for the Modern Enterprise
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Configure Webex Calling
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Location and basic calling setup
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Location and basic calling setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#organizational-and-service-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational and service settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Location setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verify the solution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="location-and-basic-calling-setup">Location and basic calling setup</h1>
+<p>The goal of this chapter is to do the basic set up required to start making and receiving test calls using Webex Calling. This will include doing some organizational set up, configuring the first location and ordering phone numbers. This set up will lay the foundation for the rest of the work that we do in this lab.</p>
+<h2 id="organizational-and-service-settings">Organizational and service settings</h2>
+<ul>
+<li>
+<p>You can browse to Webex Control Hub <a href="https://admin.webex.com">https://admin.webex.com</a> from your lab computer directly. Open Chrome browser from task bar &amp; go to Collaboration Admin Links &gt; Cisco Webex Control Hub. </p>
+</li>
+<li>
+<p>Once, you are logged in to the Control Hub, navigate to Organization Settings under the Management Menu.</p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image7.png" data-title="Screenshot: Once, you are logged in to the Control Hub, navigate to Organization Settings under the Management Menu." data-desc-position="top"><img alt="Screenshot: Once, you are logged in to the Control Hub, navigate to Organization Settings under the Management Menu." src="../assets/image7.png"></a></p>
+<ul>
+<li>Scroll down to Control Hub’s Idle Time and select 4 hours and then click Save.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image8.png" data-title="Screenshot: Scroll down to Control Hub’s Idle Time and select 4 hours and then click Save." data-desc-position="top"><img alt="Screenshot: Scroll down to Control Hub’s Idle Time and select 4 hours and then click Save." src="../assets/image8.png"></a></p>
+<ul>
+<li>Click on Calling under the Services Menu in the left pane.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image9.png" data-title="Screenshot: Click on Calling under the Services Menu in the left pane." data-desc-position="top"><img alt="Screenshot: Click on Calling under the Services Menu in the left pane." src="../assets/image9.png"></a></p>
+<ul>
+<li>Click Settings on the top and scroll down to Call Recording. We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image10.png" data-title="Screenshot: We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls" data-desc-position="top"><img alt="Screenshot: We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls" src="../assets/image10.png"></a></p>
+<ul>
+<li>Scroll to Voicemail and create a default passcode, something like 113355 and then click Save.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image11.png" data-title="Screenshot: Scroll to Voicemail and create a default passcode, something like 113355 and then click Save." data-desc-position="top"><img alt="Screenshot: Scroll to Voicemail and create a default passcode, something like 113355 and then click Save." src="../assets/image11.png"></a></p>
+<h2 id="location-setup">Location setup</h2>
+<ul>
+<li>This Lab is provisioned out of a US Data Center and has the default location “Site1”. Locations allow us to define where we get dial tone, how we get to voicemail, 911 settings, unique call recording settings and even outbound calling privileges. Click on Locations in the left Menu, then click on the location “Site1”.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image12.png" data-title="Screenshot: This Lab is provisioned out of a US Data Center and has the default location “Site1”. Locations allow us to define where we get dial tone, how we get to voicemail, 9..." data-desc-position="top"><img alt="Screenshot: This Lab is provisioned out of a US Data Center and has the default location “Site1”. Locations allow us to define where we get dial tone, how we get to voicemail, 9..." src="../assets/image12.png"></a></p>
+<ul>
+<li>Click ‘PSTN’ tab and then click ‘Manage’ in the “PSTN Connection” line.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image13.png" data-title="Screenshot: Click ‘PSTN’ tab and then click ‘Manage’ in the “PSTN Connection” line." data-desc-position="top"><img alt="Screenshot: Click ‘PSTN’ tab and then click ‘Manage’ in the “PSTN Connection” line." src="../assets/image13.png"></a></p>
+<ul>
+<li>Select Cisco Calling Plan and then click Next</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image14.png" data-title="Screenshot: Select Cisco Calling Plan and then click Next" data-desc-position="top"><img alt="Screenshot: Select Cisco Calling Plan and then click Next" src="../assets/image14.png"></a></p>
+<ul>
+<li>Complete this form using Pod Name (really anything you want here is fine), your first name “WebexOne” and last name “user” and the admin email address provided for your pod and then click next (The confirm email address is case sensitive and cannot be pasted in).</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image15.png" data-title="Screenshot: Complete this form using Pod Name (really anything you want here is fine), your first name “WebexOne” and last name “user” and the admin email address provided for y..." data-desc-position="top"><img alt="Screenshot: Complete this form using Pod Name (really anything you want here is fine), your first name “WebexOne” and last name “user” and the admin email address provided for y..." src="../assets/image15.png"></a></p>
+<ul>
+<li>When prompted, click “yes, change”</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image16.png" data-title="Screenshot: When prompted, click “yes, change”" data-desc-position="top"><img alt="Screenshot: When prompted, click “yes, change”" src="../assets/image16.png"></a></p>
+<ul>
+<li>As this is just a lab, using the information provided is sufficient. Scroll down to the bottom of the Emergency Disclaimer and enter Authorized Contact / Job Title and then click Agree and Continue in the bottom right.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image17.png" data-title="Screenshot: As this is just a lab, using the information provided is sufficient. Scroll down to the bottom of the Emergency Disclaimer and enter Authorized Contact / Job Title a..." data-desc-position="top"><img alt="Screenshot: As this is just a lab, using the information provided is sufficient. Scroll down to the bottom of the Emergency Disclaimer and enter Authorized Contact / Job Title a..." src="../assets/image17.png"></a></p>
+<ul>
+<li>Next click Save to validate that the Emergency Service Address set up for the location matches the PSAP (Public Safety Answering Point) database.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image18.png" data-title="Screenshot: Next click Save to validate that the Emergency Service Address set up for the location matches the PSAP (Public Safety Answering Point) database." data-desc-position="top"><img alt="Screenshot: Next click Save to validate that the Emergency Service Address set up for the location matches the PSAP (Public Safety Answering Point) database." src="../assets/image18.png"></a></p>
+<ul>
+<li>Assuming all goes well, you should see a screen like this. When ready, click Add numbers.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image19.png" data-title="Screenshot: Assuming all goes well, you should see a screen like this. When ready, click Add numbers." data-desc-position="top"><img alt="Screenshot: Assuming all goes well, you should see a screen like this. When ready, click Add numbers." src="../assets/image19.png"></a></p>
+<ul>
+<li>Make sure the tile labeled “Order New Numbers” is checked and then click Next.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image20.png" data-title="Screenshot: Make sure the tile labeled “Order New Numbers” is checked and then click Next." data-desc-position="top"><img alt="Screenshot: Make sure the tile labeled “Order New Numbers” is checked and then click Next." src="../assets/image20.png"></a></p>
+<ul>
+<li>Based upon the physical address of Site1, numbers in California are pre-loaded. Select your desired area code, the quantity of numbers needed (5) and then select search.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image21.png" data-title="Screenshot: Based upon the physical address of Site1, numbers in California are pre-loaded. Select your desired area code, the quantity of numbers needed (5) and then select sea..." data-desc-position="top"><img alt="Screenshot: Based upon the physical address of Site1, numbers in California are pre-loaded. Select your desired area code, the quantity of numbers needed (5) and then select sea..." src="../assets/image21.png"></a></p>
+<ul>
+<li>For the sake of this lab the assigned numbers do not matter, but you could be more granular in your search, specifying a prefix and even choosing different numbers than the automatically added ones. When happy with your assigned numbers, click order.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image22.png" data-title="Screenshot: For the sake of this lab the assigned numbers do not matter, but you could be more granular in your search, specifying a prefix and even choosing different numbers t..." data-desc-position="top"><img alt="Screenshot: For the sake of this lab the assigned numbers do not matter, but you could be more granular in your search, specifying a prefix and even choosing different numbers t..." src="../assets/image22.png"></a></p>
+<ul>
+<li>Now that you have ordered numbers, you can click on View Orders to confirm the order status.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image23.png" data-title="Screenshot: Now that you have ordered numbers, you can click on View Orders to confirm the order status." data-desc-position="top"><img alt="Screenshot: Now that you have ordered numbers, you can click on View Orders to confirm the order status." src="../assets/image23.png"></a></p>
+<ul>
+<li>This action hyperlinks you to the PSTN orders section under the PSTN &amp; Routing section and you should see that your order has a pending status.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image24.png" data-title="Screenshot: This action hyperlinks you to the PSTN orders section under the PSTN &amp; Routing section and you should see that your order has a pending status." data-desc-position="top"><img alt="Screenshot: This action hyperlinks you to the PSTN orders section under the PSTN &amp; Routing section and you should see that your order has a pending status." src="../assets/image24.png"></a></p>
+<ul>
+<li>If you click on the order ID, you should see a flyaway open and should now show the order status as provisioned.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image25.png" data-title="Screenshot: If you click on the order ID, you should see a flyaway open and should now show the order status as provisioned." data-desc-position="top"><img alt="Screenshot: If you click on the order ID, you should see a flyaway open and should now show the order status as provisioned." src="../assets/image25.png"></a></p>
+<ul>
+<li>From there, if you click PSTN &amp; Routing, then the Numbers tab, you should see your new numbers loaded up in Control Hub.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image26.png" data-title="Screenshot: From there, if you click PSTN &amp; Routing, then the Numbers tab, you should see your new numbers loaded up in Control Hub." data-desc-position="top"><img alt="Screenshot: From there, if you click PSTN &amp; Routing, then the Numbers tab, you should see your new numbers loaded up in Control Hub." src="../assets/image26.png"></a></p>
+<ul>
+<li>Now that we have 5 Phone Numbers/DIDs, we will go back to our Site1 location and complete some final set up steps. Under Management in the left menu, click on Locations, Site1 and then the PSTN tab within the location. Based upon our previous efforts, you will notice that we have a PSTN connection type now defined (Cisco Calling Plan) but that we are missing a main number. This main number must be assigned for calling to work correctly. Click on the main number drop down and select one of your available numbers, then click save at the bottom right of the page. This action will clear up most of the previous warnings. This main number can still be assigned to Users, Auto Attendants, Call Queues, etc.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image27.png" data-title="Screenshot: Now that we have 5 Phone Numbers/DIDs, we will go back to our Site1 location and complete some final set up steps. Under Management in the left menu, click on Locati..." data-desc-position="top"><img alt="Screenshot: Now that we have 5 Phone Numbers/DIDs, we will go back to our Site1 location and complete some final set up steps. Under Management in the left menu, click on Locati..." src="../assets/image27.png"></a></p>
+<ul>
+<li>Click on the calling tab within site one and within the calling features settings tile, select Captions for Webex Calling.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image28.png" data-title="Screenshot: Click on the calling tab within site one and within the calling features settings tile, select Captions for Webex Calling." data-desc-position="top"><img alt="Screenshot: Click on the calling tab within site one and within the calling features settings tile, select Captions for Webex Calling." src="../assets/image28.png"></a></p>
+<ul>
+<li>Enable closed captions and call transcripts. Click on use custom settings and then enable both features and press save. You will be prompted to override the organizational setting and you want to accept this change. Then click the calling icon to take you back to the Site1 Calling setup page.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image29.png" data-title="Screenshot: Enable closed captions and call transcripts. Click on use custom settings and then enable both features and press save. You will be prompted to override the organiza..." data-desc-position="top"><img alt="Screenshot: Enable closed captions and call transcripts. Click on use custom settings and then enable both features and press save. You will be prompted to override the organiza..." src="../assets/image29.png"></a></p>
+<ul>
+<li>As we continue to work on the setup for our first location, click on the Voice Portal to enable all users/device in this location to access voicemail. If this is not set up, lines will not cover to voicemail nor will the voicemail key work on the phones.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image30.png" data-title="Screenshot: As we continue to work on the setup for our first location, click on the Voice Portal to enable all users/device in this location to access voicemail. If this is not..." data-desc-position="top"><img alt="Screenshot: As we continue to work on the setup for our first location, click on the Voice Portal to enable all users/device in this location to access voicemail. If this is not..." src="../assets/image30.png"></a></p>
+<ul>
+<li>From here assign an extension 1234 for your voice portal and set your admin passcode at 113355, then click save.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image31.png" data-title="Screenshot: From here assign an extension 1234 for your voice portal and set your admin passcode at 113355, then click save." data-desc-position="top"><img alt="Screenshot: From here assign an extension 1234 for your voice portal and set your admin passcode at 113355, then click save." src="../assets/image31.png"></a></p>
+<ul>
+<li>If you click on PSTN &amp; Routing in the left menu and numbers, you will see all the new assignments and changes that we made to the numbering plan. (The screen below has more information than yours will)</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image32.png" data-title="Screenshot: If you click on PSTN &amp; Routing in the left menu and numbers, you will see all the new assignments and changes that we made to the numbering plan. (The screen below h..." data-desc-position="top"><img alt="Screenshot: If you click on PSTN &amp; Routing in the left menu and numbers, you will see all the new assignments and changes that we made to the numbering plan. (The screen below h..." src="../assets/image32.png"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../welcome/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Welcome
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../licensing-users/" class="md-footer__link md-footer__link--next" aria-label="Next: Licensing users">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Licensing users
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
