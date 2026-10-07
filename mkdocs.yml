@@ -87,9 +87,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Welcome: welcome.md
-  - Prepare for the lab:
-      - Lab topology: lab-topology.md
-      - Getting started: getting-started.md
+#  - Prepare for the lab:
+#      - Lab topology: lab-topology.md
+#      - Getting started: getting-started.md
   - Configure Webex Calling:
       - Location and basic calling setup: calling-setup.md
       - Licensing users: licensing-users.md
