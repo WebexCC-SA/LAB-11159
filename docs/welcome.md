@@ -24,10 +24,12 @@ By the end of the lab, you will walk away with a working prototype, a deployment
 
 ## Lab modules
 
+<!--
 1. [Lab topology](lab-topology.md)
 2. [Getting started and accessing the lab](getting-started.md)
-3. [Location and basic calling setup](calling-setup.md)
-4. [Licensing users](licensing-users.md)
-5. [Enabling AI features for Webex Calling](ai-features.md)
-6. [AI Receptionist](ai-receptionist.md)
-7. [Verification of Webex AI Calling features](verification.md)
+-->
+1. [Location and basic calling setup](calling-setup.md)
+2. [Licensing users](licensing-users.md)
+3. [Enabling AI features for Webex Calling](ai-features.md)
+4. [AI Receptionist](ai-receptionist.md)
+5. [Verification of Webex AI Calling features](verification.md)
