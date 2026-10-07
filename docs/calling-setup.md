@@ -4,7 +4,7 @@ The goal of this chapter is to do the basic set up required to start making and 
 
 ## Organizational and service settings
 
-- You can browse to Webex Control Hub [https://admin.webex.com](https://admin.webex.com) from your lab computer directly. Open Chrome browser from task bar & go to Collaboration Admin Links \> Cisco Webex Control Hub. Log in to Webex Control Hub as [cholland@cbXXX.dc-YY.com](mailto:cholland@cbXXX.dc-YY.com) & dCloudZZZZ!
+- You can browse to Webex Control Hub [https://admin.webex.com](https://admin.webex.com) from your lab computer directly. Open Chrome browser from task bar & go to Collaboration Admin Links \> Cisco Webex Control Hub. 
 
 - Once, you are logged in to the Control Hub, navigate to Organization Settings under the Management Menu.
 
