@@ -18,7 +18,7 @@ The goal of this chapter is to do the basic set up required to start making and 
 
   ![Screenshot: Click on Calling under the Services Menu in the left pane.](./assets/image9.png)
 
-- We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls
+- Click Settings on the top and scroll down to Call Recording. We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls
 
   ![Screenshot: We want to ensure the default call recording provider is listed as Webex. If not, select Webex and click Save.  We also want to enable recording of Emergency Calls](./assets/image10.png)
 
